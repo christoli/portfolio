@@ -390,6 +390,16 @@ body {
  * TAB
  */
 
+ .primary-tabs {
+    background-color: var(--background);
+    margin-block-start: 24px;
+    margin-inline: 16px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    border-block-end: 1px solid var(--outline-variant);
+ }
+
 
 /**
  * CHIP
