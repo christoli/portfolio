@@ -10,7 +10,9 @@
 
 const /** {NodeElement} */ $themeBtn = document.querySelector("[data-theme-btn]");
 const /** {NodeElement} */ $HTML = document.documentElement;
-let /** {Boolean | String} */ isDark = window.matchMedia("(prefers-color-scheme:dark)").matches;
+// let /** {Boolean | String} */ isDark = window.matchMedia("(prefers-color-scheme:dark)").matches;
+
+let isDark = true;
 
 if (sessionStorage.getItem("theme")) {
     $HTML.dataset.theme = sessionStorage.getItem("theme");
